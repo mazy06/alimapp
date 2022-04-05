@@ -1,8 +1,7 @@
-package com.alimapp.userservices.service;
+package com.alimapp.userservice.service;
 
-import com.alimapp.userservices.domain.AppRole;
-import com.alimapp.userservices.domain.AppUser;
-import org.springframework.security.core.userdetails.UserDetailsService;
+import com.alimapp.userservice.model.AppRole;
+import com.alimapp.userservice.model.AppUser;
 
 import java.util.List;
 

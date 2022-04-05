@@ -1,6 +1,6 @@
-package com.alimapp.userservices.repository;
+package com.alimapp.userservice.repository;
 
-import com.alimapp.userservices.domain.AppUser;
+import com.alimapp.userservice.model.AppUser;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface AppUserRepository extends JpaRepository<AppUser, Long> {

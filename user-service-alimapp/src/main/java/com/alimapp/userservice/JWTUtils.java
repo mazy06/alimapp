@@ -1,4 +1,4 @@
-package com.alimapp.userservices;
+package com.alimapp.userservice;
 
 public class JWTUtils {
     public static final String SECRET = "secret";

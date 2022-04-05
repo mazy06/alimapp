@@ -1,7 +1,7 @@
-package com.alimapp.userservices.service;
+package com.alimapp.userservice.service;
 
-import com.alimapp.userservices.domain.AppUser;
-import com.alimapp.userservices.repository.AppUserRepository;
+import com.alimapp.userservice.model.AppUser;
+import com.alimapp.userservice.repository.AppUserRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

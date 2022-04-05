@@ -1,12 +1,12 @@
-package com.alimapp.userservices;
+package com.alimapp.userservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class UserServicesApplication {
+public class UserServiceApplication {
     public static void main(String[] args) {
-        SpringApplication.run(UserServicesApplication.class, args);
+        SpringApplication.run(UserServiceApplication.class, args);
     }
 
 }

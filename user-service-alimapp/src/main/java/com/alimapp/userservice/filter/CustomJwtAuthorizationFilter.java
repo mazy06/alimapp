@@ -1,6 +1,6 @@
-package com.alimapp.userservices.filter;
+package com.alimapp.userservice.filter;
 
-import com.alimapp.userservices.JWTUtils;
+import com.alimapp.userservice.JWTUtils;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;

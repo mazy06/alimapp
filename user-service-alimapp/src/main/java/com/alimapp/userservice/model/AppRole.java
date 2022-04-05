@@ -1,4 +1,4 @@
-package com.alimapp.userservices.domain;
+package com.alimapp.userservice.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -12,7 +12,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 public class AppRole {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
 }

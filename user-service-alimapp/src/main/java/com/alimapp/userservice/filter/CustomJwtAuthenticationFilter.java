@@ -1,6 +1,6 @@
-package com.alimapp.userservices.filter;
+package com.alimapp.userservice.filter;
 
-import com.alimapp.userservices.JWTUtils;
+import com.alimapp.userservice.JWTUtils;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -14,7 +14,6 @@ import org.springframework.security.core.userdetails.User;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 import javax.servlet.FilterChain;
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -46,7 +45,7 @@ public class CustomJwtAuthenticationFilter extends UsernamePasswordAuthenticatio
     }
 
     @Override
-    protected void successfulAuthentication(HttpServletRequest request, HttpServletResponse response, FilterChain chain, Authentication authentication) throws IOException, ServletException {
+    protected void successfulAuthentication(HttpServletRequest request, HttpServletResponse response, FilterChain chain, Authentication authentication) throws IOException {
         log.info("successfulAuthentication");
         User user = (User) authentication.getPrincipal();
         Algorithm algorithm = Algorithm.HMAC256(JWTUtils.SECRET.getBytes());

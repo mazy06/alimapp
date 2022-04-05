@@ -1,9 +1,8 @@
-package com.alimapp.userservices.security;
+package com.alimapp.userservice.config;
 
-import com.alimapp.userservices.filter.CustomJwtAuthenticationFilter;
-import com.alimapp.userservices.filter.CustomJwtAuthorizationFilter;
-import com.alimapp.userservices.service.AppUserService;
-import com.alimapp.userservices.service.UserDetailsServiceImpl;
+import com.alimapp.userservice.filter.CustomJwtAuthenticationFilter;
+import com.alimapp.userservice.filter.CustomJwtAuthorizationFilter;
+import com.alimapp.userservice.service.UserDetailsServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;

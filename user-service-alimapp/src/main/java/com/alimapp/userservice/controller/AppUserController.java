@@ -1,8 +1,8 @@
-package com.alimapp.userservices.api;
+package com.alimapp.userservice.controller;
 
-import com.alimapp.userservices.domain.AppRole;
-import com.alimapp.userservices.domain.AppUser;
-import com.alimapp.userservices.service.AppUserService;
+import com.alimapp.userservice.model.AppRole;
+import com.alimapp.userservice.model.AppUser;
+import com.alimapp.userservice.service.AppUserService;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
