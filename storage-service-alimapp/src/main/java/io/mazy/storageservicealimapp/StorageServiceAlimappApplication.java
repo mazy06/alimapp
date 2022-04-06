@@ -2,8 +2,10 @@ package io.mazy.storageservicealimapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
+@EnableEurekaClient
 public class StorageServiceAlimappApplication {
 
     public static void main(String[] args) {
