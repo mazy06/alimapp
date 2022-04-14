@@ -8,10 +8,10 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>io.mazy</groupId>
-    <artifactId>chat-service-alimapp</artifactId>
+    <artifactId>posts-services-alimapp</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>chat-service-alimapp</name>
-    <description>chat-service-alimapp</description>
+    <name>posts-services-alimapp</name>
+    <description>posts-services-alimapp</description>
     <properties>
         <java.version>18</java.version>
         <spring-cloud.version>2021.0.1</spring-cloud.version>
@@ -27,15 +27,15 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-rest</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
 
         <dependency>

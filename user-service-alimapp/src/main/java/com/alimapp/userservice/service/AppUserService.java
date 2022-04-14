@@ -4,6 +4,7 @@ import com.alimapp.userservice.model.AppRole;
 import com.alimapp.userservice.model.AppUser;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface AppUserService {
 
@@ -29,11 +30,18 @@ public interface AppUserService {
     void addRoleToUser(String username, String roleName);
 
     /**
-     * Get a user
+     * Get a user by username
      * @param username
      * @return
      */
     AppUser getUser(String username);
+
+    /**
+     * Get a user by id
+     * @param appUserId
+     * @return
+     */
+    Optional<AppUser> getUser(Long appUserId);
 
     /**
      * Get a list of all users

@@ -36,6 +36,11 @@ public class AppUserController {
         return ResponseEntity.ok().body(appUserService.getUsers());
     }
 
+    @GetMapping("/user/{id}")
+    public ResponseEntity<Optional<AppUser>> getUser(@PathVariable(name = "id") Long appUserId){
+        return ResponseEntity.ok(appUserService.getUser(appUserId));
+    }
+
     @PostMapping("/user/save")
     public ResponseEntity<AppUser>saveUser(@RequestBody AppUser user) {
         URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("/api/user/save").toUriString());

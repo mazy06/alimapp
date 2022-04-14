@@ -6,6 +6,12 @@
 
     <modules>
         <module>user-service-alimapp</module>
+        <module>api-gateway-service-alimapp</module>
+        <module>chat-service-alimapp</module>
+        <module>contact-service-alimapp</module>
+        <module>discorvery-service-alimapp</module>
+        <module>posts-services-alimapp</module>
+        <module>storage-service-alimapp</module>
     </modules>
 
     <parent>

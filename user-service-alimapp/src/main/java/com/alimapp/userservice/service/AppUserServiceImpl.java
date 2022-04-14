@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.util.List;
+import java.util.Optional;
 
 @Service @RequiredArgsConstructor @Transactional @Slf4j
 public class AppUserServiceImpl implements AppUserService {
@@ -44,6 +45,12 @@ public class AppUserServiceImpl implements AppUserService {
     public AppUser getUser(String username) {
         log.info("Fetching user {} ", username);
         return appUserRepository.findByUsername(username);
+    }
+
+    @Override
+    public Optional<AppUser> getUser(Long appUserId) {
+        log.info("Fetching user {} ", appUserId);
+        return appUserRepository.findById(appUserId);
     }
 
     @Override
