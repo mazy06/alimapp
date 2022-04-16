@@ -30,6 +30,13 @@ public interface AppUserService {
     void addRoleToUser(String username, String roleName);
 
     /**
+     * User altrady exist
+     * @param appUserId
+     * @return
+     */
+    boolean exist(Long appUserId);
+
+    /**
      * Get a user by username
      * @param username
      * @return
@@ -48,4 +55,11 @@ public interface AppUserService {
      * @return
      */
     List<AppUser> getUsers();
+
+    /**
+     * List
+     * @param appUserIds
+     * @return
+     */
+    List<AppUser> getAllByIds(List<Long> appUserIds);
 }

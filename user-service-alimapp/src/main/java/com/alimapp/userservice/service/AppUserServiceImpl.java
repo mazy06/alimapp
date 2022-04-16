@@ -42,6 +42,11 @@ public class AppUserServiceImpl implements AppUserService {
     }
 
     @Override
+    public boolean exist(Long appUserId) {
+        return appUserRepository.existsById(appUserId);
+    }
+
+    @Override
     public AppUser getUser(String username) {
         log.info("Fetching user {} ", username);
         return appUserRepository.findByUsername(username);
@@ -59,4 +64,8 @@ public class AppUserServiceImpl implements AppUserService {
         return appUserRepository.findAll();
     }
 
+    @Override
+    public List<AppUser> getAllByIds(List<Long> appUserIds) {
+        return appUserRepository.findAllByListOfIds(appUserIds);
+    }
 }
