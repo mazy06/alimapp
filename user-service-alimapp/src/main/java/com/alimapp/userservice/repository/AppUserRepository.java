@@ -16,7 +16,7 @@ public interface AppUserRepository extends JpaRepository<AppUser, Long> {
 
     Optional<AppUser> findById(Long appUserId);
 
-    @Query(value = "select i from AppUser where i.id in :ids")
+    @Query(value = "select i from AppUser i where i.id in :ids")
     List<AppUser> findAllByListOfIds(@Param("ids") List<Long> appUserIds);
 
 }

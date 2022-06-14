@@ -10,8 +10,9 @@
         <module>chat-service-alimapp</module>
         <module>contact-service-alimapp</module>
         <module>discorvery-service-alimapp</module>
-        <module>posts-services-alimapp</module>
+        <module>post-service-alimapp</module>
         <module>storage-service-alimapp</module>
+        <module>media-service-alimapp</module>
     </modules>
 
     <parent>
@@ -72,6 +73,16 @@
                 </plugin>
             </plugins>
         </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>18</source>
+                    <target>18</target>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
 
 </project>
